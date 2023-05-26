@@ -12,4 +12,128 @@
 body{
   width: 100vw;
   height: 100vh;
+
+  font-family: 'Rubik', sans-serif;
+  background:  linear-gradient(180deg, #807ECE 0%, #8E7ECE 100%);
+}
+
+.app{
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#body-calculator{
+  background: #2D2A37;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 
+  0px 188px 52px rgba(0, 0, 0, 0.01), 
+  0px 120px 48px rgba(0, 0, 0, 0.04), 
+  0px 68px 41px rgba(0, 0, 0, 0.15), 
+  0px 30px 30px rgba(0, 0, 0, 0.26), 
+  0px 8px 17px rgba(0, 0, 0, 0.29), 
+  inset 0px 6px 8px rgba(255, 255, 255, 0.1), 
+  inset 0px -4px 5px rgba(0, 0, 0, 0.22);
+
+  border-radius: 4.8rem;
+}
+
+#display-calculator{
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+
+  padding: 5.4rem 3.2rem 2.6rem 3.6rem;
+}
+
+#historic-display{
+  text-align: end;
+  padding-right: 2.2rem;
+  padding-left: 1.8rem;
+
+  font-size: 2rem;
+  line-height: 2.8rem;
+  letter-spacing: -2%;
+  font-weight: 400;
+  color: #6B6B6B;
+}
+
+#display-results{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-right: 2.2rem;
+  padding-left: 1.8rem;
+
+  font-size: 3.6rem;
+  line-height: 5rem;
+  font-weight: 400;
+  color: #EBEBEB
+}
+
+
+
+#keyboard-calculator{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row: auto;
+
+  gap: 1.2rem;
+
+  padding: 0 3.2rem 3.2rem 3.2rem;
+}
+
+#keyboard-calculator button:active {
+  transform: scale(0.90);
+  filter: brightness(0.9);
+}
+
+
+#keyboard-calculator button {
+  color: #EBEBEB;
+
+  border-radius: 99rem;
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.01), 
+  0px 7px 7px rgba(0, 0, 0, 0.04), 
+  0px 4px 6px rgba(0, 0, 0, 0.1), 
+  0px 2px 4px rgba(0, 0, 0, 0.26), 
+  0px 0px 2px rgba(0, 0, 0, 0.29), 
+  inset 0px 2px 3px rgba(255, 255, 255, 0.06);
+
+  padding: 1.8rem;
+
+  cursor: pointer;
+}
+
+.primary{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, 
+  rgba(255, 255, 255, 0.05) 100%), 
+  #2D2A37;
+
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  font-weight: 400;
+
+}
+
+.secondary{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0.01%, 
+  rgba(255, 255, 255, 0.05) 100%),
+  #462878;
+}
+
+.tertiary{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, 
+  rgba(255, 255, 255, 0.05) 100%), 
+  #7F45E2;
 }
